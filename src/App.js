@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import writers from "./writers";
+import { ProfileCard } from "./ProfileCard";
 
 function App() {
   return (
@@ -9,20 +10,22 @@ function App() {
 
       <div className="container">
         {writers.map((writer) => (
-          <div className="card">
-            <img
-              src={`/images/${writer.avatar}.png`}
-              height="300px"
-              width="300px"
-              alt=""
-            />
+          <ProfileCard writer={writer}/>
 
-            <div className="textGroup">
-              <h3>{writer.name}</h3>
-              <p>{writer.email}</p>
-              <p>{writer.phone}</p>
-            </div>
-          </div>
+          // <div className="card">
+          //   <img
+          //     src={`/images/${writer.avatar}.png`}
+          //     height="300px"
+          //     width="300px"
+          //     alt=""
+          //   />
+
+          //   <div className="textGroup">
+          //     <h3>{writer.name}</h3>
+          //     <p>{writer.email}</p>
+          //     <p>{writer.phone}</p>
+          //   </div>
+          // </div>
         ))}
       </div>
     </div>
