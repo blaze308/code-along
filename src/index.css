@@ -7,13 +7,12 @@ body {
   background-color: #ffdeca;
 }
 
-
 h1 {
   text-align: center;
   margin: 20px;
   color: #2c1203;
-  text-decoration: underline;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .container {
@@ -27,13 +26,17 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out;
   margin: 20px auto;
   max-width: 300px;
   background: coral;
+  border-radius: 2px;
   box-shadow: 3px 2px 3px silver;
   transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px whitesmoke;
 }
 
 .cardContent {
@@ -46,39 +49,46 @@ h1 {
   text-align: justify;
 }
 
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 5px 5px 10px whitesmoke;
-}
-
 .textGroup {
   padding: 10px 0;
   text-align: center;
   color: white;
 }
 
-.container {
+.infoText {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.action {
+  margin-top: 50px;
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actionBtn {
+  width: 90%;
   margin: auto;
+  color: #2c1203;
+  font-size: 18px;
+  padding: 5px 0;
+  margin: 5px 0;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
-.card {
-  margin: 20px auto;
-  max-width: 300px;
-  background: coral;
-  box-shadow: 3px 2px 3px silver;
-  transition: all 0.3s ease-in-out;
+.actionBtn:hover {
+  background-color: #ffdeca;
 }
 
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 5px 5px 10px whitesmoke;
-}
-
-.textGroup {
-  padding: 10px 0;
-  text-align: center;
-  color: white;
+.actionBtn:active {
+  transform: scale(0.987);
 }
