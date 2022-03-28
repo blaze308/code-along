@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
@@ -13,40 +16,6 @@ h1 {
   color: #2c1203;
   text-transform: uppercase;
   text-decoration: underline;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 80%;
-  margin: auto;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 20px auto;
-  max-width: 300px;
-  background: coral;
-  border-radius: 2px;
-  box-shadow: 3px 2px 3px silver;
-  transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.01);
-  box-shadow: 5px 5px 10px whitesmoke;
-}
-
-.cardContent {
-  height: 300px;
-}
-
-.bioWrap {
-  color: whitesmoke;
-  margin: 15px;
-  text-align: justify;
 }
 
 .textGroup {
@@ -91,4 +60,126 @@ h1 {
 
 .actionBtn:active {
   transform: scale(0.987);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 300px;
+  background: coral;
+  border-radius: 2px;
+  box-shadow: 3px 2px 3px silver;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 10px whitesmoke;
+}
+
+.cardContent {
+  height: 300px;
+}
+
+.bioWrap {
+  color: whitesmoke;
+  margin: 15px;
+  text-align: justify;
+}
+
+.textGroup {
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  color: #2c1203;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #2c1203;
+  text-transform: uppercase;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+fieldset {
+  margin: 10px 0;
+  padding: 20px;
+}
+
+fieldset > * {
+  display: flex;
+}
+
+fieldset > * > * {
+  margin: 10px;
+}
+
+input {
+  font-size: 18px;
+}
+
+form > button {
+  font-size: 18px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+form > button:active {
+  transform: scale(0.995);
+}
+
+hr {
+  margin: 30px 0;
+  height: 10px;
+  background-color: #2c1203;
+  outline: 0;
+  border: 0;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.greenCard {
+  flex: 1;
+  color: white;
+  margin: auto;
+  margin: 5px;
+  padding: 15px;
+  background-color: darkcyan;
 }
