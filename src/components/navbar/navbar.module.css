@@ -1,0 +1,28 @@
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 0 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;    
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    background-color: rgb(84, 90, 90);
+    transform: rotate(-27deg);
+}
+nav ul li a:hover {
+    color: whitesmoke;
+}
